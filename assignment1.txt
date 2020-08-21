@@ -1,20 +1,26 @@
 **********************************************************************************************8
 1. Write a program to display the multiplication table from 5 to 10.
   
-#include<stdio.h>
-#include<conio.h>
-
- void main()
- {
-     for(int i=1;i<=10;i++)
-     {
-         for(int j=5;j<=10;j++)
-         {
-            printf("%d  ",i*j);
-         }
+#include <stdio.h>
+#include <conio.h>
+void main(){
+    for(int i=1;i<=10;i++)
+    { 
+       int a=i;
+       if(a==1){
+           for(int j=5;j<=10;j++){
+            printf("%d ",i*j);
+            printf(" ");
+        }
+       }
+       else{
+        for(int j=5;j<=10;j++){
+            printf("%d ",i*j);
+        }
+       }
         printf("\n");
-     }
- }
+    }
+}
 
 output
 5    6   7   8   9  10  

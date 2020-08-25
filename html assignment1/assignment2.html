@@ -7,6 +7,8 @@
     .main{
         border: 1px solid;
         width: 100%;
+        height: 600px;
+        margin: 50px;
     }
     .label {
         font-size: 20px;
@@ -17,25 +19,6 @@
     }
     .row {
         margin: 5px;
-    }
-    .tableh {
-        font-size: 25px;
-        text-align: center;
-    }
-    table,
-    th,
-    td {
-        border: 1px solid black;
-    }
-    table {
-        border-collapse: collapse;
-        width: 90%;
-    }
-    th {
-        height: 50px;
-    }
-    td {
-        height: 35px;
     }
     .checkb {
         width: 20px;
@@ -48,14 +31,15 @@
         border: 1px solid;
         padding: 6px;
     }
+    iframe{
+        width:100% !important;
+    }
 </style>
 
 <body>
     <div class="main">
         <form>
-            <h2>Personal
-                Information:____________________________________________________________________________________________
-            </h2>
+            <h2>Personal Information:</h2>
             <div class="row">
                 <label
                     class="label"><b>ID</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -94,8 +78,10 @@
             </div>
         </form>
         <br>
-        <br>
-        <table >
+        <br>   
+        <iframe src="usetable2.html" title="Education Information ">
+        </iframe>     
+        <!-- <table >
             <thead>
                 <h3 style="margin-bottom: 4px;">Educational Information:</h3>
             </thead>
@@ -113,7 +99,7 @@
                 <td></td>
                 <td><input type="checkbox"></td>
             </tr>
-        </table>
+        </table> -->
         <br>
         <br>
         <br>

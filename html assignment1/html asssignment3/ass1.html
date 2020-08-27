@@ -1,0 +1,201 @@
+<html>
+
+<head>
+    <title>assig 1</title>
+</head>
+<style>
+    table.main {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 500px;
+    }
+
+    tr {
+        height: 20px;
+    }
+
+    td {
+        border: 2px solid;
+    }
+
+    .left {
+        text-align: left;
+    }
+
+    .centers {
+        text-align: center;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    .web {
+        width: 500px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid;
+    }
+
+    header {
+        background-color: rgb(91, 109, 59);
+        height: 40px;
+        margin: 1px;
+        border: 0.1 em solid black;
+    }
+
+    footer {
+        background-color: rgb(56, 65, 105);
+        height: 30px;
+        border: 0.1 em solid black;
+        margin: 1px;
+       
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .leftside {
+        height: 225px;
+        width: 100px;
+        float: left;
+        border: 1px solid;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    .centercont {
+        display: inline-block;
+        width: 290px;
+        height: 225px;
+        border: 1px solid;
+        margin-right: 1px;
+    }
+    img{
+        width:250px;
+        height:200px;
+        margin-top: 10px;
+    }
+    .rightside {
+        float: right;
+        margin-right: 1px;
+        width: 100px;
+        border: 1px solid;
+        height: 225px;
+    }
+</style>
+
+<body>
+    <div>
+        <table class="main">
+            <tr>
+                <td class="left">left</td>
+                <td class="centers">center</td>
+                <td class="right">right</td>
+
+            </tr>
+            <tr>
+                <td class="left">left</td>
+                <td class="centers">center</td>
+                <td class="right">right</td>
+            </tr>
+            <tr>
+                <td class="left">left</td>
+                <td class="centers">center</td>
+                <td class="right">right</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table class="main">
+            <tr>
+                <td colspan="6"></td>
+            </tr>
+            <tr>
+                <td rowspan="4"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td rowspan="2" colspan="3"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="6"></td>
+            </tr>
+        </table><br><br><br>
+        <table class="main">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="4"></td>
+                <td></td>
+                <td rowspan="4"></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table><br>
+        <div class="web">
+            <div>
+                <header></header>
+            </div>
+            <div>
+                <div class="container">
+                    <div class="leftside">
+
+                    </div>
+
+                    <div class="centercont">
+                        <img style="width:250px;height:200px;margin-top: 10px;" src="./../swati.jpg" />
+                    </div>
+
+                    <div class="rightside">
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <footer></footer>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

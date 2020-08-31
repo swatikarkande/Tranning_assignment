@@ -5,7 +5,6 @@ function validationForm() {
     var firstInputValue = document.form1.firstInputValue.value;
     var secondInputValue = document.form1.secondInputValue.value;
 
-    var numbers = /^[0-9]+$/;
     if (firstInputValue == null || firstInputValue == "") {
         alert("Enter any first number");
         return false;

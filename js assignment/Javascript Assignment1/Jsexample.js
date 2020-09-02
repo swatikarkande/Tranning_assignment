@@ -8,6 +8,17 @@ function myFun(){
     var city=document.form1.city.value;
     var state=document.form1.state.value;
     var pincode=document.form1.pincode.value;
-    alert("my firstname: "+fistname+"\n lastname: "+lastname+"\n Designation: "+Designation+"\n mobile number: "+mobilenum+"\n Address: "+address
-    +"\n City: "+city+"\n State: "+state+"\n pincode"+pincode);
+    // alert("my firstname: "+fistname+"\n lastname: "+lastname+"\n Designation: "+Designation+"\n mobile number: "+mobilenum+"\n Address: "+address
+    // +"\n City: "+city+"\n State: "+state+"\n pincode"+pincode);
+    var items=[];
+    items.push(fistname);
+    items.push(lastname);
+    items.push(Designation);
+    items.push(mobilenum);
+    items.push(address);
+    items.push(city);
+    items.push(state);
+    items.push(pincode);
+    document.write(items);
+    console.log(items);
 }

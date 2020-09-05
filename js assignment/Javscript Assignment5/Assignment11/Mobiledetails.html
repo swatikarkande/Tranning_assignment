@@ -1,0 +1,62 @@
+<html>
+
+<head>
+	<title>Mobile Details</title>
+	<script type="text/javscript" src="Mobiledetails.js"></script>
+</head>
+
+<body>
+	<h2>Mobile details.</h2>
+	<h3 style="padding-left:20px">a. Mobile Name</h3>
+	<h3 style="padding-left:20px">b. Mobile Brand</h3>
+	<h3 style="padding-left:20px">c. Mobile Price</h3>
+
+	<br>
+	<div>
+		Mobile name:<br>
+		<input id="mbn" type="text" name="mbName" value="">
+		<br>
+		Mobile Brand:<br>
+		<input id="mbb" type="text" name="mbbrand" value="">
+		<br>
+		Mobile price:<br>
+		<input id="mbpr" type="text" name="mbPrice" value="">
+		<br><br>
+		<button type="button" onclick="insertVal()">Display all details</button>
+	</div>
+
+	<div id="display" style="display:none">
+		<div style="background-color: beige">
+			<p id="mbname">Mobile Name: </p>
+			<p id="mbbrand">Mobile Brand: </p>
+			<p id="mbprice">Mobile Price: </p>
+		</div>
+	</div>
+	<script>
+		var mb = {};
+		function insertVal() {
+			mb['Name'] = document.getElementById("mbn").value;
+			mb['Brand'] = document.getElementById("mbb").value;
+			mb['Price'] = document.getElementById("mbpr").value;
+			if (isNaN(mb.Price)) {
+				alert("Please provide valid price!");
+				document.getElementById("display").style.display = "none";
+				return;
+			}
+			displayAllDetails();
+		}
+		function displayAllDetails() {
+			document.getElementById("mbname").innerHTML += mb.Name;
+			document.getElementById("mbbrand").innerHTML += mb.Brand;
+
+			var price = parseInt(mb.Price);
+			price += ((price + 10) / 100);
+			price -= ((price + 3) / 100);
+
+			document.getElementById("mbprice").innerHTML += price;
+			document.getElementById("display").style.display = "inline-block";
+		}
+	</script>
+</body>
+
+</html>

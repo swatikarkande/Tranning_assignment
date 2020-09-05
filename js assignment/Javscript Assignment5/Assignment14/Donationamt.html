@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Donation Amount of cause</title>
+        <script type="text/javascript" src="Donationamt.js"></script>
+    </head>
+    <body>
+        <p id = "nan" style="font-size:20px;color:red;display:none"></p>
+        <div id="donation1" style="display:none">
+            <label for="fname" >Donation amount</label>
+            &nbsp;&nbsp;
+            <input type="text" id="donation" name="donation" placeholder="Enter donation amout">
+            <div>
+                <br>
+                <button type="button" onclick="donate();">Donate</button>
+                <button type="button" onclick="cancel();">Cancel</button>
+            </div>
+        </div>
+        <br>
+    
+        <div  id= "dc">
+            <button type="button" onclick="donateCause();">Donate for a cause</button>
+        </div>
+    </body>
+</html>

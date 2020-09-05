@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Pattern</title>
+    <!-- <script type="text/javascript" src="Validatevaluetype.js"></script> -->
+</head>
+
+<body>
+    <h2>Validate whether a given value type is error or not</h2>
+    <p style="font-size:25px">function is_Error(input) {
+        return input instanceof Error || toString.call(input) === '[object Error]';
+        }</p>
+    <br>
+    <h3>Output: <h3>
+
+            <p id="demo" style="font-size:23px">is_Error(new Error('foo')): </p>
+            <p id="demo1" style="font-size:23px">is_Error(100): </p>
+            <p id="demo2" style="font-size:23px">is_Error('foo'): </p>
+            <script>
+                function is_Error(input) {
+                    return input instanceof Error || toString.call(input) === '[object Error]';
+                }
+
+                document.getElementById("demo").innerHTML += is_Error(new Error('foo'));
+                document.getElementById("demo1").innerHTML += is_Error(100);
+                document.getElementById("demo2").innerHTML += is_Error('foo');
+
+
+                console.log(is_Error(new Error('foo')));
+                console.log(is_Error(100));
+                console.log(is_Error('foo'));
+            </script>
+</body>
+
+</html>

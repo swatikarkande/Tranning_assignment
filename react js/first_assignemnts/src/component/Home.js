@@ -3,8 +3,28 @@ import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
 export default class Home extends React.Component {
-    render() {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+
+        }
+    }
+    /**
+     * 
+     * @param {*} values 
+     * this function save student form data.
+     */
+    saveData = (values) => {
+        console.log(values);
+    }
+    /**
+     * this function render student form
+     */
+    renderStudentForm = () => {
         return (
+        <div>
+            <h1>StudentForm</h1>
             <Formik
                 initialValues={{
                     firstName: '',
@@ -26,10 +46,14 @@ export default class Home extends React.Component {
                         .min(10, 'Must be exactly 10 digits')
                         .max(10, 'Must be exactly 10 digits'),
                 })}
-                onSubmit={fields => {
-                    alert('SUCCESS!! :-)\n\n' + JSON.stringify(fields, null, 4))
+
+                onSubmit={values => {
+                    // alert('SUCCESS!! :-)\n\n' + JSON.stringify(fields, null, 4))
+                    { this.saveData(values) }
                 }}
+
                 render={({ errors, status, touched }) => (
+                    
                     <Form>
                         <div className="firstdiv">
                             <div className="form-group">
@@ -61,6 +85,14 @@ export default class Home extends React.Component {
                     </Form>
                 )}
             />
+        </div>)
+    }
+    render() {
+
+        return (
+            <div>
+                {this.renderStudentForm()}
+            </div>
         )
     }
 }

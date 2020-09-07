@@ -1,0 +1,1 @@
+var str="The Quick Brown Fox";

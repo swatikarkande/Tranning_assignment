@@ -21,7 +21,10 @@ export default class Home extends React.Component {
                         .email('Email is invalid')
                         .required('Email is required'),
                     contact: Yup.string()
-                        .required("*Phone number required"),
+                        .required('A phone number is required')
+                        .matches(/^[0-9]+$/, "Must be only digits")
+                        .min(10, 'Must be exactly 10 digits')
+                        .max(10, 'Must be exactly 10 digits'),
                 })}
                 onSubmit={fields => {
                     alert('SUCCESS!! :-)\n\n' + JSON.stringify(fields, null, 4))
